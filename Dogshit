@@ -217,14 +217,14 @@ gui.blazedLoader:Destroy()
     getgenv().NotiMode = "Xaxa"
     
     function Notifications(NotiINFO)
-        if getgenv().NotiMode == "Roblox" then
+        if getgenv().NotiMode == "Xaxa" then
             game:GetService("StarterGui"):SetCore("SendNotification",{
                 Title = "Blazed", -- Required
                 Text = NotiINFO, -- Required
                 Icon = "rbxassetid://15115954522" -- Optional
             })
         else
-            if getgenv().NotiMode == "Xaxa" then
+            if getgenv().NotiMode == "Roblox" then
                 notifications:BuildNotificationUI();
                 notifications:Notify(NotiINFO);
         else
